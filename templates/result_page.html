@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Links shorter</title>
+</head>
+
+<body>
+    <div class="shorting_link_form">
+        <span class="enter_you_link">Enter your link</span>
+        <form name = "shorting_link_form" action="{% url 'linkshorter:result_page' %}" method="GET">
+            <input type="text" name="full_link" size="20">
+            <input type="submit" value="Short it!">
+        </form>
+    </div>
+    {{ result }}
+</body>
