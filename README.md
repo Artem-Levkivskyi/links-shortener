@@ -1,5 +1,16 @@
-### Service for generating short links
-User may enter his link into form on website for generating short link.
-
-* If user enter in the form some string, which not a link, website send error message.
-* If user enter in address row incorrect short link, website send error message.
+# Links shortener. Service for create short links for URL's.
+## Functional:
+### You can do next actions:
+* Shortening some URL.
+* Go to websites by your short link
+---
+## How it work:
+### Get short link for your URL:
+* If you enter your URl in form in service, system check it's database for availability this link.
+* If link is present in database, system send you short link with key from database.
+* Else - system generates short link for your URL, put it in database and send you it.
+* If you enter some string, was not a link, system send you an error.
+### Get website for your shortlink:
+* If you enter in address row some short link, system check if it short link is correct.
+* If database don't containe key from your short link, ystem send you error
+* Else - you get URL for you key and will be redirect to website.
